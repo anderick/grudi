@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="menu" name="menuContribution" schema="schema/menu.exsd"/>
+   <extension-point id="button" name="toolbarContribution" schema="schema/button.exsd"/>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="net.sf.grudi.ui.application.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="net.sf.grudi.ui.application.Perspective"
+            id="net.sf.grudi.ui.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="net.sf.grudi.ui.editors.plan.PlanEditor"
+            default="false"
+            id="net.sf.grudi.ui.planEditor"
+            name="Plan Editor">
+      </editor>
+      <editor
+            class="net.sf.grudi.ui.editors.report.ReportEditor"
+            default="false"
+            id="net.sf.grudi.ui.reportEditor"
+            name="Report Editor">
+      </editor>
+      <editor
+            class="net.sf.grudi.ui.editors.crud.CRUDEditor"
+            default="false"
+            id="net.sf.grudi.ui.crudEditor"
+            name="CRUD Editor">
+      </editor>
+   </extension>
+
+</plugin>

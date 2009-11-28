@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model Plugin
+Bundle-SymbolicName: net.sf.grudi.model;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: net.sf.grudi.model.ModelPlugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.views;bundle-version="3.3.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: net.sf.grudi.model.search,
+ net.sf.grudi.model.vo
