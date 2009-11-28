@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Report Plugin
+Bundle-SymbolicName: net.sf.grudi.report;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: net.sf.grudi.report.ReportPlugin
+Require-Bundle: org.eclipse.ui,
+ net.sf.grudi.model;bundle-version="1.0.0",
+ net.sf.grudi.persistence;bundle-version="1.0.0",
+ org.eclipse.birt.report.engine;bundle-version="2.3.2";visibility:=reexport,
+ org.eclipse.birt;bundle-version="2.3.2";visibility:=reexport,
+ org.eclipse.birt.report.engine.emitter.html;bundle-version="2.3.2"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ lib/commons-beanutils-1.5.jar,
+ lib/commons-collections-2.1.jar,
+ lib/commons-digester-1.7.jar,
+ lib/commons-logging.jar,
+ lib/itext-1.3.1.jar,
+ lib/jasperreports-1.2.6.jar,
+ lib/jcommon-1.0.0.jar,
+ lib/jfreechart-1.0.0.jar,
+ lib/poi-2.0-final-20040126.jar
